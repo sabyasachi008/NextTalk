@@ -11,15 +11,15 @@ interface MessageDTO {
 interface Message {
     user: User;
     message: string;
-    date: string;
+    date: Date;
 }
 
 export interface ServerToClientEvents {
-    message: (params: MessageDTO) => void;
+    message: (params: Message) => void;
 }
 
 export interface ClientToServerEvents {
-    message: (params: Message) => void;
+    message: (params: MessageDTO) => void;
 }
 
 export * from './server';
