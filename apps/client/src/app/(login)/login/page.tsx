@@ -26,5 +26,23 @@ export default function Home() {
     login(event.currentTarget.elements.name.value);
     router.push(Paths.chat);
     
-  }
+  };
+
+  return (
+
+    <main className='{style.main}'>
+      <h1>Welcome</h1>
+      <form onSubmit={handleSubmit} className='{style.form'>
+        <input
+          placeholder='Username'
+          type= 'text'
+          required={true}
+          name='name'
+          id='name'
+          autoComplete='off'
+        />
+        <button type='submit'>Login</button>
+      </form>
+    </main>
+  );
 }
