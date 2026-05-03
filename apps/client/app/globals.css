@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ─── Reset & Base ─── */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --wa-teal-dark: #075E54;
+  --wa-teal: #128C7E;
+  --wa-teal-light: #25D366;
+  --wa-blue: #34B7F1;
+  --wa-bg: #0b141a;
+  --wa-bg-chat: #0b141a;
+  --wa-bg-panel: #111b21;
+  --wa-bg-input: #2a3942;
+  --wa-bg-msg-incoming: #202c33;
+  --wa-bg-msg-outgoing: #005c4b;
+  --wa-text-primary: #e9edef;
+  --wa-text-secondary: #8696a0;
+  --wa-text-green: #00a884;
+  --wa-border: #222d34;
+  --wa-hover: #182229;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background-color: var(--wa-bg);
+  color: var(--wa-text-primary);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ─── Scrollbar ─── */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(134, 150, 160, 0.3);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(134, 150, 160, 0.5);
+}

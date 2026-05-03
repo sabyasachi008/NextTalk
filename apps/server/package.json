@@ -12,8 +12,8 @@
     "@types/express": "^5.0.6",
     "@types/node": "^25.6.0",
     "@app/types": "*",
-    "tsconfig": "*",
-    "eslint-config-custom": "*"
+    "@repo/typescript-config": "*",
+    "@repo/eslint-config": "*"
   },
   "peerDependencies": {
     "typescript": "^6.0.2"

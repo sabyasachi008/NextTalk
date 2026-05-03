@@ -16,10 +16,12 @@ interface Message {
 
 export interface ServerToClientEvents {
     message: (params: Message) => void;
+    typing: (params: { name: string }) => void;
+    stopTyping: (params: { name: string }) => void;
 }
 
 export interface ClientToServerEvents {
     message: (params: MessageDTO) => void;
+    typing: (params: { name: string }) => void;
+    stopTyping: (params: { name: string }) => void;
 }
-
-export * from './server';
